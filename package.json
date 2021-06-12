@@ -1,0 +1,10 @@
+{
+  "name": "windicss-nix",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "",
+  "dependencies": {
+    "windicss": ""
+  }
+}
