@@ -28,6 +28,6 @@ in
     Volumes = {
       "/data" = { };
     };
-    Cmd = [ "${windicss}/bin/windicss" ];
+    Entrypoint = [ "${windicss}/bin/windicss" ];
   };
 }
