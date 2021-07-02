@@ -5,8 +5,12 @@
 #       --argstr tag <image-tag>
 #   )
 let
-  pkgs = import <nixpkgs> { };
-  windicss = (import ./. {}).shell.nodeDependencies;
+  nixpkgs = builtins.fetchTarball {
+    sha256 = "02yk20i9n5nhn6zgll3af7kp3q5flgrpg1h5vcqfdqcck8iikx4b";
+    url = "https://github.com/NixOS/nixpkgs/archive/db6e089456cdddcd7e2c1d8dac37a505c797e8fa.tar.gz";
+  };
+  pkgs = import nixpkgs { };
+  windicss = (import ./. { inherit pkgs; }).shell.nodeDependencies;
 in
 { name ? "sridca/windicss"
 , tag ? "dev"
