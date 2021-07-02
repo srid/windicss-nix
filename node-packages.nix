@@ -4,13 +4,13 @@
 
 let
   sources = {
-    "windicss-3.1.3" = {
+    "windicss-3.1.4" = {
       name = "windicss";
       packageName = "windicss";
-      version = "3.1.3";
+      version = "3.1.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/windicss/-/windicss-3.1.3.tgz";
-        sha512 = "l7fpoba2LY9AYRy4UgcuOpbPsed8UsbpEQYUVWRR1wdAwiKxK6bGIMfpiKJtjPAPdh0GOGUqr6KJar0EDZSxzg==";
+        url = "https://registry.npmjs.org/windicss/-/windicss-3.1.4.tgz";
+        sha512 = "3RBcANxdOy/n4dLVT8+0X409sGI+piO06ARbQ8RncxGuYgdw5Ip3hrhGIYajH67lV+tHc7xNVGxj73amOC9N0g==";
       };
     };
   };
@@ -20,7 +20,7 @@ let
     version = "1.0.0";
     src = ./.;
     dependencies = [
-      sources."windicss-3.1.3"
+      sources."windicss-3.1.4"
     ];
     buildInputs = globalBuildInputs;
     meta = {
